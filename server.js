@@ -1,11 +1,13 @@
+//Import files
 import {rps, rpsls} from './lib/rpsls.js';
 import minimist from "minimist";
 import express from "express";
 const argv = minimist(process.argv.slice(2))
 const app = express();
-const port = argv.port || 5000;
+const port = argv.port || 5000; //Initialize port to 5000 if not given
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
+//Handle requests
 app.get('/app', (req, res) => {
     res.status(200).send("200 OK").end();
 });
