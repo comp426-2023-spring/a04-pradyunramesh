@@ -36,6 +36,7 @@ app.post('/app/rpsls/play', (req, res) => {
     res.status(200).send(JSON.stringify(rpsls(req.body.shot))).end();
 });
 app.get('/app/*', (req,res) =>{
+    //Throw a 404 error for other inputs
     res.status(404).send("404 NOT FOUND");
 });
 app.listen(port);
