@@ -1,7 +1,7 @@
 //Import files
 import {rps, rpsls} from './lib/rpsls.js';
-import minimist from "minimist";
-import express from "express";
+import minimist from "minimist"; //Import minimist packages
+import express from "express"; //Import express packages
 const argv = minimist(process.argv.slice(2))
 const app = express();
 const port = argv.port || 5000; //Initialize port to 5000 if not given
