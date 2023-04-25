@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 //Handle requests
 app.get('/app', (req, res) => {
-    res.status(200).send("200 OK").end();
+    res.status(200).send("200 OK").end(); //Approved message
 });
 app.get('/app/rps', (req, res) => {
     res.status(200).send(JSON.stringify(rps())).end();
