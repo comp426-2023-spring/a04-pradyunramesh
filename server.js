@@ -17,7 +17,7 @@ app.get('/app/rpsls', (req, res) => {
     res.status(200).send(JSON.stringify(rpsls())).end();//RPSLS call
 });
 app.get('/app/rps/play', (req, res) => {
-    res.status(200).send(JSON.stringify(rps(req.query.shot))).end();
+    res.status(200).send(JSON.stringify(rps(req.query.shot))).end();//RPS play call
 });
 app.get('/app/rps/play/:shot', (req, res) => {
     res.status(200).send(JSON.stringify(rps(req.params.shot))).end();
