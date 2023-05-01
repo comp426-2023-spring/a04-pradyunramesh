@@ -1,5 +1,4 @@
-//Import files
-import {rps, rpsls} from './lib/rpsls.js';
+import {rps, rpsls} from './lib/rpsls.js'; //Import from a3
 import minimist from "minimist"; //Import minimist packages
 import express from "express"; //Import express packages
 const argv = minimist(process.argv.slice(2))
