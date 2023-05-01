@@ -11,7 +11,7 @@ app.get('/app', (req, res) => {
     res.status(200).send("200 OK").end(); //Approved message
 });
 app.get('/app/rps', (req, res) => {
-    res.status(200).send(JSON.stringify(rps())).end();
+    res.status(200).send(JSON.stringify(rps())).end(); //RPS call
 });
 app.get('/app/rpsls', (req, res) => {
     res.status(200).send(JSON.stringify(rpsls())).end();
