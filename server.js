@@ -29,7 +29,7 @@ app.get('/app/rpsls/play/:shot', (req, res) => {
     res.status(200).send(JSON.stringify(rpsls(req.params.shot))).end();//RPSLS play with shot call
 });
 app.get('/app/rpsls/play', (req, res) => {
-    res.status(200).send(JSON.stringify(rpsls(req.query.shot))).end();
+    res.status(200).send(JSON.stringify(rpsls(req.query.shot))).end();//RPSLS play call
 });
 app.post('/app/rpsls/play', (req, res) => {
     res.status(200).send(JSON.stringify(rpsls(req.body.shot))).end();
