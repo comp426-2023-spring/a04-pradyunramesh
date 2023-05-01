@@ -20,7 +20,7 @@ app.get('/app/rps/play', (req, res) => {
     res.status(200).send(JSON.stringify(rps(req.query.shot))).end();//RPS play call
 });
 app.get('/app/rps/play/:shot', (req, res) => {
-    res.status(200).send(JSON.stringify(rps(req.params.shot))).end();
+    res.status(200).send(JSON.stringify(rps(req.params.shot))).end();//RPS play with shot call
 });
 app.post('/app/rps/play', (req, res) => {
     res.status(200).send(JSON.stringify(rps(req.body.shot))).end();
