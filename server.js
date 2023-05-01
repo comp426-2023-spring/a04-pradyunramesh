@@ -32,7 +32,7 @@ app.get('/app/rpsls/play', (req, res) => {
     res.status(200).send(JSON.stringify(rpsls(req.query.shot))).end();//RPSLS play call
 });
 app.post('/app/rpsls/play', (req, res) => {
-    res.status(200).send(JSON.stringify(rpsls(req.body.shot))).end();
+    res.status(200).send(JSON.stringify(rpsls(req.body.shot))).end();//RPSLS play call
 });
 app.get('/app/*', (req,res) =>{
     //Throw a 404 error for other inputs
